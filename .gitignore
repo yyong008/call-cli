@@ -14,3 +14,5 @@ TODO.md
 /prisma/dev.db
 /prisma/dev.db-journal
 .vercel
+
+./docs/.vitepress/cache
