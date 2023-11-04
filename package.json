@@ -1,0 +1,64 @@
+{
+  "name": "call-cli",
+  "version": "0.0.0",
+  "description": "A cli when you think",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "call": "./src/bin/call.js"
+  },
+  "scripts": {
+    "dev": "tsx ./src/index.ts",
+    "dev:production": "node dist/index.js",
+    "build": "rollup -c ./rollup.config.js",
+    "commit": "git-cz",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "call",
+    "cli"
+  ],
+  "author": "mg",
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@types/node": "^20.8.10",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "eslint": "^8.52.0",
+    "prettier": "^3.0.3",
+    "rollup": "^4.2.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.2",
+    "tsx": "^3.14.0"
+  },
+  "files": [
+    "./files",
+    "README.md"
+  ],
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}
