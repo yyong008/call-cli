@@ -11,4 +11,11 @@ program
     createFiles(opts[1].args)
   })
 
+program
+  .command('create')
+  .option('-f, --framework <name>', 'to fill simple code', '')
+  .action((...opts) => {
+    console.log(opts)
+  })
+
 program.parse(process.argv)
