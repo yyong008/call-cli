@@ -3,11 +3,12 @@ import { Command } from 'commander'
 import { createFiles } from './touch/createFiles'
 import { rm } from './rm'
 import { useHosts } from './ping'
-import { getData } from './top'
+import { formatDay } from './day'
 
 const program = new Command()
 
 program
+  // .version()
   .command('touch')
   .option('-f, --framework <name>', 'to fill simple code', '')
   .action((...opts) => {
@@ -25,8 +26,14 @@ program.command('ping').action((...opts) => {
   useHosts(opts[1].args)
 })
 
-program.command('top').action(() => {
+program.command('top').action(async () => {
+  const { getData } = await import('./top')
   getData()
+})
+
+program.command('day').action((...opts) => {
+  const format = opts[1].args[0] || 'YYYY-MM-DD HH:mm:ss'
+  formatDay(format)
 })
 
 program

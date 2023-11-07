@@ -61,7 +61,7 @@ icall ping '192.168.1.1' 'google.com' 'yahoo.com' 'baidu.com'
 - tree
 - ls/ll/...
 - cat
-- date
+- ~~day/date~~
 - time
 - cd
 - mv
