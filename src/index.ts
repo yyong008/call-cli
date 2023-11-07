@@ -1,6 +1,7 @@
 import { Command } from 'commander'
 
 import { createFiles } from './touch/createFiles'
+import { rm } from './rm'
 
 const program = new Command()
 
@@ -9,6 +10,13 @@ program
   .option('-f, --framework <name>', 'to fill simple code', '')
   .action((...opts) => {
     createFiles(opts[1].args)
+  })
+
+program
+  .command('rm')
+  .option('-d, --dir <name>', 'a ', '')
+  .action((...opts) => {
+    rm(opts[1].args)
   })
 
 program

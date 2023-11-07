@@ -1,6 +1,6 @@
 {
   "name": "icall-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A cli when you think",
   "main": "index.js",
   "type": "module",
@@ -53,6 +53,7 @@
     "commander": "^11.1.0",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
+    "glob": "^10.3.10",
     "husky": "^8.0.3",
     "lint-staged": "^15.0.2",
     "tsx": "^3.14.0",
