@@ -47,11 +47,49 @@ pnpm run dev touch -f react index.tsx about.tsx
 pnpm run dev touch -f vue index.vue about.vue
 ```
 
+- ping
+
+```sh
+pnpm run dev ping '192.168.1.1' 'google.com' 'yahoo.com' 'baidu.com'
+icall ping '192.168.1.1' 'google.com' 'yahoo.com' 'baidu.com'
+```
 
 ## Todo
 
-remove
-
-- rm file.tsx
-- rm -rf ./**.*
+- ~~touch~~
+- ~~remove~~
+- tree
+- ls/ll/...
+- cat
+- date
+- time
+- cd
+- mv
+- mkdir/mkdirp
+- man
+- chmod
+- exit
+- sudo
+- htop
+- unzip
+- echo
+- ps
+- kill
+- ping
+- history
+- vim/nvim
+- passwd
+- which
+- shred
+- less
+- tail
+- head
+- grep
+- whoami
+- whatis
+- wc
+- uname
+- neofetch
+- find
+- wget
 
