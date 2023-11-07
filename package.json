@@ -1,6 +1,6 @@
 {
   "name": "icall-cli",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A cli when you think",
   "main": "index.js",
   "type": "module",

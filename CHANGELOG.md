@@ -1,5 +1,11 @@
 # call-cli
 
+## 0.0.7
+
+### Patch Changes
+
+- cat
+
 ## 0.0.6
 
 ### Patch Changes

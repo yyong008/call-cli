@@ -36,6 +36,11 @@ program.command('day').action((...opts) => {
   formatDay(format)
 })
 
+program.command('cat').action(async (...opts) => {
+  const { cat } = await import('./cat')
+  cat(opts[1].args[0])
+})
+
 program
   .command('create')
   .option('-f, --framework <name>', 'to fill simple code', '')
