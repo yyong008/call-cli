@@ -20,6 +20,9 @@ dependencies:
   commitizen:
     specifier: ^4.3.0
     version: 4.3.0(typescript@5.2.2)
+  console-gui-tools:
+    specifier: ^3.2.2
+    version: 3.2.2
   cz-conventional-changelog:
     specifier: ^3.3.0
     version: 3.3.0(typescript@5.2.2)
@@ -32,9 +35,15 @@ dependencies:
   lint-staged:
     specifier: ^15.0.2
     version: 15.0.2
+  lodash:
+    specifier: ^4.17.21
+    version: 4.17.21
   ping:
     specifier: ^0.4.4
     version: 0.4.4
+  ps-list:
+    specifier: ^8.1.1
+    version: 8.1.1
   tsx:
     specifier: ^3.14.0
     version: 3.14.0
@@ -46,6 +55,9 @@ devDependencies:
   '@changesets/cli':
     specifier: ^2.26.2
     version: 2.26.2
+  '@types/lodash':
+    specifier: ^4.14.200
+    version: 4.14.200
   '@types/node':
     specifier: ^20.8.10
     version: 20.8.10
@@ -1376,6 +1388,10 @@ packages:
     resolution: {integrity: sha512-hPpIeeHb/2UuCw06kSNAOVWgehBLXEo0/fUs0mw3W2qhqX89PI2yvok83MnuctYGCPrabGIoi0fFso4DQ+sNUQ==}
     dev: true
 
+  /@types/lodash@4.14.200:
+    resolution: {integrity: sha512-YI/M/4HRImtNf3pJgbF+W6FrXovqj+T+/HpENLTooK9PnkacBsDpeP3IpHab40CClUfhNmdM2WTNP2sa2dni5Q==}
+    dev: true
+
   /@types/markdown-it@13.0.5:
     resolution: {integrity: sha512-QhJP7hkq3FCrFNx0szMNCT/79CXfcEgUIA3jc5GBfeXqoKsk3R8JZm2wRXJ2DiyjbPE4VMFOSDemLFcUTZmHEQ==}
     dependencies:
@@ -2223,6 +2239,12 @@ packages:
   /consola@3.2.3:
     resolution: {integrity: sha512-I5qxpzLv+sJhTVEoLYNcTW+bThDCPsit0vLNKShZx6rLtpilNpmmeTPaeqJb9ZE9dV3DGaeby6Vuhrw38WjeyQ==}
     engines: {node: ^14.18.0 || >=16.10.0}
+    dev: false
+
+  /console-gui-tools@3.2.2:
+    resolution: {integrity: sha512-CZEdvaYRrk7Xtj2gkv5QTsgwogw0IwaDTNTEdL5x3d1XCGXWIYHbFvecDaF+zEctmrrkBB+zWIrEJXoYlsSByQ==}
+    dependencies:
+      chalk: 5.3.0
     dev: false
 
   /conventional-commit-types@3.0.0:
@@ -4168,6 +4190,11 @@ packages:
       ansi-styles: 5.2.0
       react-is: 18.2.0
     dev: true
+
+  /ps-list@8.1.1:
+    resolution: {integrity: sha512-OPS9kEJYVmiO48u/B9qneqhkMvgCxT+Tm28VCEJpheTpl8cJ0ffZRRNgS5mrQRTrX5yRTpaJ+hRDeefXYmmorQ==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dev: false
 
   /pseudomap@1.0.2:
     resolution: {integrity: sha512-b/YwNhb8lk1Zz2+bXXpS/LK9OisiZZ1SNsSLxN1x2OXVEhW2Ckr/7mWE5vrC1ZTiJlD9g19jWszTmJsB+oEpFQ==}

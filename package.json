@@ -1,6 +1,6 @@
 {
   "name": "icall-cli",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A cli when you think",
   "main": "index.js",
   "type": "module",
@@ -36,6 +36,7 @@
   "license": "MIT",
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
+    "@types/lodash": "^4.14.200",
     "@types/node": "^20.8.10",
     "@typescript-eslint/eslint-plugin": "^6.9.1",
     "@typescript-eslint/parser": "^6.9.1",
@@ -52,11 +53,14 @@
     "chalk": "^5.3.0",
     "commander": "^11.1.0",
     "commitizen": "^4.3.0",
+    "console-gui-tools": "^3.2.2",
     "cz-conventional-changelog": "^3.3.0",
     "glob": "^10.3.10",
     "husky": "^8.0.3",
     "lint-staged": "^15.0.2",
+    "lodash": "^4.17.21",
     "ping": "^0.4.4",
+    "ps-list": "^8.1.1",
     "tsx": "^3.14.0",
     "unbuild": "^2.0.0"
   },

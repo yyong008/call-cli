@@ -3,6 +3,7 @@ import { Command } from 'commander'
 import { createFiles } from './touch/createFiles'
 import { rm } from './rm'
 import { useHosts } from './ping'
+import { getData } from './top'
 
 const program = new Command()
 
@@ -22,6 +23,10 @@ program
 
 program.command('ping').action((...opts) => {
   useHosts(opts[1].args)
+})
+
+program.command('top').action(() => {
+  getData()
 })
 
 program
