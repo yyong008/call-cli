@@ -1,17 +1,12 @@
 {
   "name": "icall-cli",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A cli when you think",
-  "main": "index.js",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
   "type": "module",
   "bin": {
     "icall": "src/bin/call.js"
-  },
-  "exports": {
-    ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
-    }
   },
   "types": "./dist/index.d.ts",
   "scripts": {
@@ -23,7 +18,7 @@
     "changeset": "changeset",
     "version": "changeset version",
     "prepare": "husky install",
-    "publish": "npm publish --registry=https://registry.npmjs.org/",
+    "publish": "pnpm run unbuild && npm publish --registry=https://registry.npmjs.org/",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
@@ -68,7 +63,6 @@
   "files": [
     "./src/bin",
     "./dist",
-    "./files",
     "README.md"
   ],
   "lint-staged": {

@@ -47,6 +47,18 @@ program.command('ls').action(async (...opts) => {
 })
 
 program
+  .command('mkdir')
+  .option(
+    '-s, --sep <name>',
+    'default use system windows "\\" and linux "/"',
+    ''
+  )
+  .action(async (...opts) => {
+    const { mkdirp } = await import('./mkdir')
+    mkdirp(opts[1].args[0], opts[0].sep)
+  })
+
+program
   .command('create')
   .option('-f, --framework <name>', 'to fill simple code', '')
   .action((...opts) => {

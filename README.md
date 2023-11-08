@@ -59,8 +59,8 @@ icall ping '192.168.1.1' 'google.com' 'yahoo.com' 'baidu.com'
 - ~~touch~~
 - ~~remove~~
 - tree
-- ls/ll/...
-- cat
+- ~~ls/ll/...~~
+- ~~cat~~
 - ~~day/date~~
 - time
 - cd
