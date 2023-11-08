@@ -1,5 +1,11 @@
 # call-cli
 
+## 0.0.8
+
+### Patch Changes
+
+- ls
+
 ## 0.0.7
 
 ### Patch Changes

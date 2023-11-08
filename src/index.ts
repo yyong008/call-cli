@@ -41,6 +41,11 @@ program.command('cat').action(async (...opts) => {
   cat(opts[1].args[0])
 })
 
+program.command('ls').action(async (...opts) => {
+  const { listFilesAndDirectories } = await import('./ls')
+  listFilesAndDirectories(opts[1].args[0])
+})
+
 program
   .command('create')
   .option('-f, --framework <name>', 'to fill simple code', '')
