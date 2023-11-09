@@ -1,6 +1,6 @@
 {
   "name": "icall-cli",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "A cli when you think",
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
@@ -58,8 +58,10 @@
     "iconv-lite": "^0.6.3",
     "lint-staged": "^15.0.2",
     "lodash": "^4.17.21",
+    "neofetch": "^7.1.0",
     "ping": "^0.4.4",
     "ps-list": "^8.1.1",
+    "tree-cli": "^0.6.7",
     "tsx": "^3.14.0",
     "unbuild": "^2.0.0"
   },

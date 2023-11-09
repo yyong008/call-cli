@@ -86,6 +86,11 @@ program.command('whoami').action(async () => {
   whoami()
 })
 
+program.command('tree').action(async () => {
+  const { tree } = await import('./tree')
+  tree()
+})
+
 // program
 //   .command('x')
 //   // .option('-f, --framework <name>', 'to fill simple code', '')
