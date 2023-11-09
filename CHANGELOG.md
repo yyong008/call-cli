@@ -1,5 +1,17 @@
 # call-cli
 
+## 0.0.11
+
+### Patch Changes
+
+- which
+
+## 0.0.10
+
+### Patch Changes
+
+- set version in ts
+
 ## 0.0.9
 
 ### Patch Changes

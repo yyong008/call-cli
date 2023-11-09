@@ -65,7 +65,7 @@ icall ping '192.168.1.1' 'google.com' 'yahoo.com' 'baidu.com'
 - time
 - cd
 - mv
-- mkdir/mkdirp
+- ~~mkdir/mkdirp~~
 - man
 - chmod
 - exit

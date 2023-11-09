@@ -1,6 +1,6 @@
 {
   "name": "icall-cli",
-  "version": "0.0.9",
+  "version": "0.0.11",
   "description": "A cli when you think",
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
@@ -18,7 +18,7 @@
     "changeset": "changeset",
     "version": "changeset version",
     "prepare": "husky install",
-    "publish": "pnpm run unbuild && npm publish --registry=https://registry.npmjs.org/",
+    "publish": "npm publish --registry=https://registry.npmjs.org/",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
@@ -53,6 +53,7 @@
     "dayjs": "^1.11.10",
     "glob": "^10.3.10",
     "husky": "^8.0.3",
+    "iconv-lite": "^0.6.3",
     "lint-staged": "^15.0.2",
     "lodash": "^4.17.21",
     "ping": "^0.4.4",

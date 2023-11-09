@@ -1,6 +1,8 @@
 import { Command } from 'commander'
 
-import { createFiles } from './touch/createFiles'
+import pkg from '../package.json'
+
+import { createFiles } from './touch'
 import { rm } from './rm'
 import { useHosts } from './ping'
 import { formatDay } from './day'
@@ -8,7 +10,7 @@ import { formatDay } from './day'
 const program = new Command()
 
 program
-  // .version()
+  .version(pkg.version)
   .command('touch')
   .option('-f, --framework <name>', 'to fill simple code', '')
   .action((...opts) => {
@@ -58,11 +60,24 @@ program
     mkdirp(opts[1].args[0], opts[0].sep)
   })
 
-program
-  .command('create')
-  .option('-f, --framework <name>', 'to fill simple code', '')
-  .action((...opts) => {
-    console.log(opts)
-  })
+program.command('which').action(async (...opts) => {
+  const { which } = await import('./which')
+  which(opts[1].args[0])
+})
+
+program.command('cd').action(async (...opts) => {
+  const { changeDirectory } = await import('./cd')
+  console.log(opts[1].args[0])
+  changeDirectory(opts[1].args[0])
+})
+
+// program
+//   .command('x')
+//   // .option('-f, --framework <name>', 'to fill simple code', '')
+//   .action(async(...opts) => {
+//     const { x } = await import('./x')
+//     console.log(opts[1].args[0])
+//     x(opts[1].args[0])
+//   })
 
 program.parse(process.argv)
