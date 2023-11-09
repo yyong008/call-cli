@@ -62,9 +62,10 @@ icall ping '192.168.1.1' 'google.com' 'yahoo.com' 'baidu.com'
 - ~~ls/ll/...~~
 - ~~cat~~
 - ~~day/date~~
-- time
 - cd
-- mv
+- ~~cp~~
+- ~~mv~~
+- ~~cp~~
 - ~~mkdir/mkdirp~~
 - man
 - chmod
@@ -79,7 +80,7 @@ icall ping '192.168.1.1' 'google.com' 'yahoo.com' 'baidu.com'
 - history
 - vim/nvim
 - passwd
-- which
+- ~~which~~
 - shred
 - less
 - tail

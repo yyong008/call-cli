@@ -71,6 +71,16 @@ program.command('cd').action(async (...opts) => {
   changeDirectory(opts[1].args[0])
 })
 
+program.command('cp').action(async (...opts) => {
+  const { cp } = await import('./cp')
+  cp(opts[1].args[0], opts[1].args[1])
+})
+
+program.command('mv').action(async (...opts) => {
+  const { mv } = await import('./mv')
+  mv(opts[1].args[0], opts[1].args[1])
+})
+
 // program
 //   .command('x')
 //   // .option('-f, --framework <name>', 'to fill simple code', '')
