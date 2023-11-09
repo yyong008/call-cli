@@ -81,6 +81,11 @@ program.command('mv').action(async (...opts) => {
   mv(opts[1].args[0], opts[1].args[1])
 })
 
+program.command('whoami').action(async () => {
+  const { whoami } = await import('./whoami')
+  whoami()
+})
+
 // program
 //   .command('x')
 //   // .option('-f, --framework <name>', 'to fill simple code', '')

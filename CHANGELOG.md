@@ -1,5 +1,11 @@
 # call-cli
 
+## 0.0.13
+
+### Patch Changes
+
+- whoami
+
 ## 0.0.12
 
 ### Patch Changes

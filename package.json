@@ -1,6 +1,6 @@
 {
   "name": "icall-cli",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "A cli when you think",
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
