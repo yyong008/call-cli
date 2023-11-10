@@ -3,23 +3,20 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "iCall Cli"
+  text: "🌠A user-friendly CLI"
+  tagline: 🌠A user-friendly CLI initialization
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: all command
+      link: /index
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: linux
+    details: linux
+  - title: nodejs
+    details: nodejs command
+  - title: exec
+    details: a nodejs exec
 ---
 
