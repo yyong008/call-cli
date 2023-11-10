@@ -91,13 +91,18 @@ program.command('tree').action(async () => {
   tree()
 })
 
+program.command('ps').action(async () => {
+  const { ps } = await import('./ps')
+  ps()
+})
+
 // program
 //   .command('x')
 //   // .option('-f, --framework <name>', 'to fill simple code', '')
 //   .action(async(...opts) => {
 //     const { x } = await import('./x')
-//     console.log(opts[1].args[0])
-//     x(opts[1].args[0])
+//     // console.log(opts[1].args.join(" "))
+//     x()
 //   })
 
 program.parse(process.argv)

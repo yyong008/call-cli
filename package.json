@@ -1,6 +1,6 @@
 {
   "name": "icall-cli",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "A cli when you think",
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
@@ -12,8 +12,7 @@
   "scripts": {
     "dev": "tsx ./src/index.ts",
     "dev:production": "node dist/index.js",
-    "build": "rollup -c ./rollup.config.js",
-    "unbuild": "unbuild",
+    "build": "unbuild",
     "commit": "git-cz",
     "changeset": "changeset",
     "version": "changeset version",
@@ -24,8 +23,28 @@
     "docs:preview": "vitepress preview docs"
   },
   "keywords": [
-    "call",
-    "cli"
+    "icall",
+    "cli",
+    "windows",
+    "linux",
+    "macOS",
+    "cat",
+    "cd",
+    "cp",
+    "day",
+    "exec",
+    "ls",
+    "mkdir",
+    "mv",
+    "mkdir",
+    "ping",
+    "rm",
+    "top",
+    "touch",
+    "tree",
+    "which",
+    "whoami",
+    "x"
   ],
   "author": "mg",
   "license": "MIT",

@@ -1,9 +1,25 @@
 import * as os from 'os'
 import * as process from 'process'
-import { exec } from 'child_process'
+import { exec, spawn } from 'child_process'
 // import iconv from 'iconv-lite';
 
-export function x(commandName: string) {
+export function x() {
+  const npx = spawn('npx', [''])
+
+  npx.stdout.on('data', (data) => {
+    console.log(`stdout:${data}`)
+  })
+
+  npx.stderr.on('data', (data) => {
+    console.error(`stderr: ${data}`)
+  })
+
+  npx.on('close', (code) => {
+    console.log(`child process exited with code ${code}`)
+  })
+}
+
+export function ex(commandName: string) {
   const isWindows = os.platform() === 'win32'
   // let _command = ''
 
