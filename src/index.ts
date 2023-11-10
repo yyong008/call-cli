@@ -101,9 +101,9 @@ program.command('kill').action(async (...opts) => {
   kill(opts[1].args[0])
 })
 
-program.command('neofetch').action(async (...opts) => {
+program.command('neofetch').action(async () => {
   const { neofetch } = await import('./neofetch')
-  neofetch(opts[1].args[0])
+  neofetch()
 })
 
 // program
