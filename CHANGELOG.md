@@ -1,5 +1,11 @@
 # call-cli
 
+## 0.0.19
+
+### Patch Changes
+
+- cowsay
+
 ## 0.0.18
 
 ### Patch Changes
