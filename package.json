@@ -1,6 +1,6 @@
 {
   "name": "icall-cli",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "A cli when you think",
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
@@ -17,6 +17,7 @@
     "changeset": "changeset",
     "version": "changeset version",
     "prepare": "husky install",
+    "format": "prettier --write ./src/**/*.ts",
     "publish": "npm publish --registry=https://registry.npmjs.org/",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",

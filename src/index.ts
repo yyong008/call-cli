@@ -101,6 +101,11 @@ program.command('kill').action(async (...opts) => {
   kill(opts[1].args[0])
 })
 
+program.command('neofetch').action(async (...opts) => {
+  const { neofetch } = await import('./neofetch')
+  neofetch(opts[1].args[0])
+})
+
 // program
 //   .command('x')
 //   // .option('-f, --framework <name>', 'to fill simple code', '')
