@@ -1,5 +1,11 @@
 # call-cli
 
+## 0.0.20
+
+### Patch Changes
+
+- 0768868: history
+
 ## 0.0.19
 
 ### Patch Changes
