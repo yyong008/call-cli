@@ -116,6 +116,11 @@ program.command('cowsay').action(async (...opts) => {
   cowsay(opts[1].args[0])
 })
 
+program.command('history').action(async () => {
+  const { history } = await import('./history')
+  history()
+})
+
 // program
 //   .command('x')
 //   // .option('-f, --framework <name>', 'to fill simple code', '')
