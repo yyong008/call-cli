@@ -96,6 +96,11 @@ program.command('ps').action(async () => {
   ps()
 })
 
+program.command('kill').action(async (...opts) => {
+  const { kill } = await import('./kill')
+  kill(opts[1].args[0])
+})
+
 // program
 //   .command('x')
 //   // .option('-f, --framework <name>', 'to fill simple code', '')

@@ -1,6 +1,6 @@
 {
   "name": "icall-cli",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "A cli when you think",
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
@@ -99,5 +99,9 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yyong008/call-cli.git"
   }
 }
