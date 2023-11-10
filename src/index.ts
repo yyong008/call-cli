@@ -111,6 +111,11 @@ program.command('echo').action(async () => {
   echo()
 })
 
+program.command('cowsay').action(async (...opts) => {
+  const { cowsay } = await import('./cowsay')
+  cowsay(opts[1].args[0])
+})
+
 // program
 //   .command('x')
 //   // .option('-f, --framework <name>', 'to fill simple code', '')
