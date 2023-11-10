@@ -90,7 +90,7 @@ icall ping '192.168.1.1' 'google.com' 'yahoo.com' 'baidu.com'
 - whatis
 - wc
 - uname
-- neofetch
+- ~~neofetch~~
 - find
 - wget
 

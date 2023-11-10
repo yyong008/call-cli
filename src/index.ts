@@ -106,6 +106,11 @@ program.command('neofetch').action(async () => {
   neofetch()
 })
 
+program.command('echo').action(async () => {
+  const { echo } = await import('./echo')
+  echo()
+})
+
 // program
 //   .command('x')
 //   // .option('-f, --framework <name>', 'to fill simple code', '')

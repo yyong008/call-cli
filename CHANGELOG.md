@@ -1,5 +1,11 @@
 # call-cli
 
+## 0.0.18
+
+### Patch Changes
+
+- echo readline
+
 ## 0.0.17
 
 ### Patch Changes
