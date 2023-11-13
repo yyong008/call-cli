@@ -1,5 +1,7 @@
 # which
 
+get command address in system
+
 ## usage
 
 ```sh

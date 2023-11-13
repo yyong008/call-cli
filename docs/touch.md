@@ -1,11 +1,14 @@
 # touch
 
-like linux `touch` files, or windows `ni` command
+like linux `touch` command create files, or windows `ni` command create files
 
 ## usage
 
-```
-call touch -f react 'index.tsx' 'about.tsx'
-call touch -f vue 'index.vue' 'about.vue'
+```sh
+icall touch -f react 'index.tsx' 'about.tsx'
+icall touch -f vue 'index.vue' 'about.vue'
+
+# output
+# File "C:\Users\Administrator\Desktop\call-cli\call-cli\index.tsx" created successfully. [1/1]
 ```
 

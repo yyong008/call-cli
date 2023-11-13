@@ -1,5 +1,7 @@
 # kill
 
+kill process by pid
+
 ## usage
 
 ```sh

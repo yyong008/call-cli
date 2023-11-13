@@ -1,5 +1,7 @@
 # cowsay
 
+say some something
+
 ## usage
 
 ```sh

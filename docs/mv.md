@@ -1,5 +1,7 @@
 # mv
 
+move files and dirs
+
 ## usage
 
 ```sh

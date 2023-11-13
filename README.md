@@ -28,32 +28,6 @@ icall rm Abc.tsx Def.tsx
 icall rm index.vue about.vue
 ```
 
-## clone
-
-```ts
-git clone https://github.com/yyong008/call-cli.git
-
-pnpm install
-
-pnpm run build
-
-npm link
-```
-
-## usage in dev
-
-```sh
-pnpm run dev touch -f react index.tsx about.tsx
-pnpm run dev touch -f vue index.vue about.vue
-```
-
-- ping
-
-```sh
-pnpm run dev ping '192.168.1.1' 'google.com' 'yahoo.com' 'baidu.com'
-icall ping '192.168.1.1' 'google.com' 'yahoo.com' 'baidu.com'
-```
-
 ## Todo
 
 - ~~touch~~

@@ -1,5 +1,7 @@
 # mkdir
 
+create dir
+
 ## usage
 
 ```sh

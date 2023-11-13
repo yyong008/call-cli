@@ -1,5 +1,7 @@
 # cat
 
+output file content
+
 ## usage
 
 ```sh

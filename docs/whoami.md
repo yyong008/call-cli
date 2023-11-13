@@ -4,4 +4,7 @@
 
 ```sh
 call whoami
+
+# output
+# Administrator
 ```
