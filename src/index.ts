@@ -139,6 +139,15 @@ program
     base64(opts[1].args[0], opts[1].args[1]) // pnpm run dev hash asdf 10
   })
 
+program
+  // .option('-l, --len <length>', 'a', '')
+  .command('qrcode')
+  .action(async (...opts) => {
+    const { qrcode } = await import('./qrcode')
+
+    qrcode(opts[1].args[0]) // pnpm run dev hash asdf 10
+  })
+
 // program
 //   .command('x')
 //   // .option('-f, --framework <name>', 'to fill simple code', '')

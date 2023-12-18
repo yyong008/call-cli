@@ -62,6 +62,9 @@ dependencies:
   ps-list:
     specifier: ^8.1.1
     version: 8.1.1
+  qrcode:
+    specifier: ^1.5.3
+    version: 1.5.3
   tree-cli:
     specifier: ^0.6.7
     version: 0.6.7
@@ -91,6 +94,9 @@ devDependencies:
   '@types/node':
     specifier: ^20.8.10
     version: 20.8.10
+  '@types/qrcode':
+    specifier: ^1.5.5
+    version: 1.5.5
   '@typescript-eslint/eslint-plugin':
     specifier: ^6.9.1
     version: 6.9.1(@typescript-eslint/parser@6.9.1)(eslint@8.52.0)(typescript@5.2.2)
@@ -111,7 +117,7 @@ devDependencies:
     version: 5.2.2
   vitepress:
     specifier: 1.0.0-rc.24
-    version: 1.0.0-rc.24(@algolia/client-search@4.20.0)(@types/node@20.8.10)(axios@1.6.1)(search-insights@2.9.0)(typescript@5.2.2)
+    version: 1.0.0-rc.24(@algolia/client-search@4.20.0)(@types/node@20.8.10)(axios@1.6.1)(qrcode@1.5.3)(search-insights@2.9.0)(typescript@5.2.2)
   vitest:
     specifier: ^0.34.6
     version: 0.34.6
@@ -1470,6 +1476,12 @@ packages:
   /@types/normalize-package-data@2.4.3:
     resolution: {integrity: sha512-ehPtgRgaULsFG8x0NeYJvmyH1hmlfsNLujHe9dQEia/7MAJYdzMSi19JtchUHjmBA6XC/75dK55mzZH+RyieSg==}
 
+  /@types/qrcode@1.5.5:
+    resolution: {integrity: sha512-CdfBi/e3Qk+3Z/fXYShipBT13OJ2fDO2Q2w5CIP5anLTLIndQG9z6P1cnm+8zCWSpm5dnxMFd/uREtb0EXuQzg==}
+    dependencies:
+      '@types/node': 20.8.10
+    dev: true
+
   /@types/resolve@1.20.2:
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
     dev: false
@@ -1765,7 +1777,7 @@ packages:
       - vue
     dev: true
 
-  /@vueuse/integrations@10.5.0(axios@1.6.1)(focus-trap@7.5.4)(vue@3.3.7):
+  /@vueuse/integrations@10.5.0(axios@1.6.1)(focus-trap@7.5.4)(qrcode@1.5.3)(vue@3.3.7):
     resolution: {integrity: sha512-fm5sXLCK0Ww3rRnzqnCQRmfjDURaI4xMsx+T+cec0ngQqHx/JgUtm8G0vRjwtonIeTBsH1Q8L3SucE+7K7upJQ==}
     peerDependencies:
       async-validator: '*'
@@ -1810,6 +1822,7 @@ packages:
       '@vueuse/shared': 10.5.0(vue@3.3.7)
       axios: 1.6.1
       focus-trap: 7.5.4
+      qrcode: 1.5.3
       vue-demi: 0.14.6(vue@3.3.7)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -2576,6 +2589,9 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dev: true
 
+  /dijkstrajs@1.0.3:
+    resolution: {integrity: sha512-qiSlmBq9+BCdCA/L46dw8Uy93mloxsPSbwnm5yrKn2vMPiy8KyAskTF6zuV/j5BMsmOGZDPs7KjU+mjb670kfA==}
+
   /dir-glob@3.0.1:
     resolution: {integrity: sha512-WkrWp9GR4KXfKGYzOLmTuGVi1UWFfws377n9cc55/tb6DuqyF6pcQ5AbiHEshaDpY9v6oaSr2XCDidGmMwdzIA==}
     engines: {node: '>=8'}
@@ -2609,6 +2625,9 @@ packages:
   /emoji-regex@9.2.2:
     resolution: {integrity: sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg==}
     dev: false
+
+  /encode-utf8@1.0.3:
+    resolution: {integrity: sha512-ucAnuBEhUK4boH2HjVYG5Q2mQyPorvv0u/ocS+zhdw0S8AlHYY+GOFhP1Gio5z4icpP2ivFSvhtFjQi8+T9ppw==}
 
   /enquirer@2.4.1:
     resolution: {integrity: sha512-rRqJg/6gd538VHvR3PSrdRBb/1Vy2YfzHqzvbhGIQpDRKIa4FgV/54b5Q1xYSxOOwKvjXweS26E0Q+nAMwp2pQ==}
@@ -4414,6 +4433,10 @@ packages:
       mlly: 1.4.2
       pathe: 1.1.1
 
+  /pngjs@5.0.0:
+    resolution: {integrity: sha512-40QW5YalBNfQo5yRYmiw7Yz6TKKVr3h6970B2YE+3fQpsWcrbj1PzJgxeJ19DRQjhMbKPIuMY8rFaXc8moolVw==}
+    engines: {node: '>=10.13.0'}
+
   /postcss@8.4.31:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
     engines: {node: ^10 || ^12 || >=14}
@@ -4496,6 +4519,16 @@ packages:
   /punycode@2.3.1:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
+
+  /qrcode@1.5.3:
+    resolution: {integrity: sha512-puyri6ApkEHYiVl4CFzo1tDkAZ+ATcnbJrJ6RiBM1Fhctdn/ix9MTE3hRph33omisEbC/2fcfemsseiKgBPKZg==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dependencies:
+      dijkstrajs: 1.0.3
+      encode-utf8: 1.0.3
+      pngjs: 5.0.0
+      yargs: 15.4.1
 
   /queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
@@ -5475,7 +5508,7 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vitepress@1.0.0-rc.24(@algolia/client-search@4.20.0)(@types/node@20.8.10)(axios@1.6.1)(search-insights@2.9.0)(typescript@5.2.2):
+  /vitepress@1.0.0-rc.24(@algolia/client-search@4.20.0)(@types/node@20.8.10)(axios@1.6.1)(qrcode@1.5.3)(search-insights@2.9.0)(typescript@5.2.2):
     resolution: {integrity: sha512-RpnL8cnOGwiRlBbrYQUm9sYkJbtyOt/wYXk2diTcokY4yvks/5lq9LuSt+MURWB6ZqwpSNHvTmxgaSfLoG0/OA==}
     hasBin: true
     peerDependencies:
@@ -5493,7 +5526,7 @@ packages:
       '@vitejs/plugin-vue': 4.3.1(vite@4.5.0)(vue@3.3.7)
       '@vue/devtools-api': 6.5.1
       '@vueuse/core': 10.5.0(vue@3.3.7)
-      '@vueuse/integrations': 10.5.0(axios@1.6.1)(focus-trap@7.5.4)(vue@3.3.7)
+      '@vueuse/integrations': 10.5.0(axios@1.6.1)(focus-trap@7.5.4)(qrcode@1.5.3)(vue@3.3.7)
       focus-trap: 7.5.4
       mark.js: 8.11.1
       minisearch: 6.2.0
