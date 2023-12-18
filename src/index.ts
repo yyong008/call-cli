@@ -121,6 +121,15 @@ program.command('history').action(async () => {
   history()
 })
 
+program
+  .option('-l, --len <length>', 'a', '')
+  .command('hash')
+  .action(async (...opts) => {
+    const { hash } = await import('./hash')
+
+    hash(opts[1].args[0], opts[1].args[1]) // pnpm run dev hash asdf 10
+  })
+
 // program
 //   .command('x')
 //   // .option('-f, --framework <name>', 'to fill simple code', '')
