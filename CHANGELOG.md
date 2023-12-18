@@ -1,5 +1,11 @@
 # call-cli
 
+## 0.0.24
+
+### Patch Changes
+
+- qrcode
+
 ## 0.0.23
 
 ### Patch Changes

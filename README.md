@@ -69,3 +69,4 @@ icall rm index.vue about.vue
 - ~~cowsay~~
 - ~~hash~~
 - ~~base64~~
+- ~~qrcode~~
