@@ -130,6 +130,15 @@ program
     hash(opts[1].args[0], opts[1].args[1]) // pnpm run dev hash asdf 10
   })
 
+program
+  // .option('-l, --len <length>', 'a', '')
+  .command('base64')
+  .action(async (...opts) => {
+    const { base64 } = await import('./base64')
+
+    base64(opts[1].args[0], opts[1].args[1]) // pnpm run dev hash asdf 10
+  })
+
 // program
 //   .command('x')
 //   // .option('-f, --framework <name>', 'to fill simple code', '')

@@ -67,3 +67,5 @@ icall rm index.vue about.vue
 - find
 - wget
 - ~~cowsay~~
+- ~~hash~~
+- ~~base64~~

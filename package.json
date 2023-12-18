@@ -1,6 +1,6 @@
 {
   "name": "icall-cli",
-  "version": "0.0.21",
+  "version": "0.0.23",
   "description": "A cli when you think",
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
@@ -45,6 +45,8 @@
     "tree",
     "which",
     "whoami",
+    "hash",
+    "base64",
     "x"
   ],
   "author": "mg",
