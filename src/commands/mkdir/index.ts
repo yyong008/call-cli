@@ -1,6 +1,6 @@
 import * as fs from 'fs'
 import * as path from 'path'
-import { errorMessage, successMessage } from '../utils/color'
+import { errorMessage, successMessage } from '../../utils/color'
 
 export function mkdirp(dir: string, sep: string) {
   const parts = dir.split(sep ? sep : path.sep)

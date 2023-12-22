@@ -1,7 +1,7 @@
 import * as path from 'path'
 import fs from 'fs/promises'
 
-import { successMessage, errorMessage } from '../utils/color'
+import { successMessage, errorMessage } from '../../utils/color'
 
 export async function createFiles(files: string[]) {
   const currentDirectory = process.cwd()

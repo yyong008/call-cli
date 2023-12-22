@@ -1,5 +1,5 @@
 import ping from 'ping'
-import { successMessage, errorMessage } from '../utils/color'
+import { successMessage, errorMessage } from '../../utils/color'
 
 export function useHosts(hosts: string[]) {
   hosts.forEach(function (host) {

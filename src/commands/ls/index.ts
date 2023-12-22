@@ -1,6 +1,6 @@
 import * as fs from 'fs'
 import * as path from 'path'
-import { successMessage } from '../utils/color'
+import { successMessage } from '../../utils/color'
 
 export function listFilesAndDirectories(_directoryPath: string = './') {
   const directoryPath = path.join(process.cwd(), _directoryPath)

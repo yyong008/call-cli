@@ -1,5 +1,5 @@
 import * as crypto from 'crypto'
-import { successMessage } from '../utils/color'
+import { successMessage } from '../../utils/color'
 
 export function hash(str: string, len: number) {
   const hash = crypto.createHash('sha256').update(str).digest('hex')

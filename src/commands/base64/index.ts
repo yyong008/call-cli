@@ -1,4 +1,4 @@
-import { successMessage } from '../utils/color'
+import { successMessage } from '../../utils/color'
 
 export function base64(str: string, de: unknown) {
   if (de) {

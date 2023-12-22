@@ -1,5 +1,5 @@
 import readline from 'readline'
-import { successMessage } from '../utils/color'
+import { successMessage } from '../../utils/color'
 
 export function echo() {
   const rl = readline.createInterface({

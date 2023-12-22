@@ -1,6 +1,6 @@
 import fs from 'fs'
 import { join } from 'path'
-import { successMessage, errorMessage } from '../utils/color'
+import { successMessage, errorMessage } from '../../utils/color'
 
 export function rm(files: string[]) {
   rmByArray(files)
