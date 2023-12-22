@@ -2,16 +2,21 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "iCall Cli",
-  description: "🌠A user-friendly CLI",
+  title: '🌠iCall Cli',
+  description: 'A convenient CLI',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'command', link: '/command/index' }
+      { text: 'base', link: '/base/intro' },
+      { text: 'command', link: '/command/index' },
     ],
 
     sidebar: [
+      {
+        text: 'base',
+        items: [{ text: 'intro', link: '/base/intro' }],
+      },
       {
         text: 'command',
         items: [
@@ -36,13 +41,17 @@ export default defineConfig({
           { text: 'wget', link: '/wget' },
           { text: 'which', link: '/which' },
           { text: 'whoami', link: '/whoami' },
-          { text: 'x', link: '/x' }
-        ]
-      }
+          { text: 'qrcode', link: '/qrcode' },
+          { text: 'tree', link: '/tree' },
+          { text: 'ipconfig', link: '/ipconfig' },
+          { text: 'hash', link: '/hash' },
+          { text: 'x', link: '/x' },
+        ],
+      },
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
-  }
+      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
+    ],
+  },
 })

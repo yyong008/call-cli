@@ -1,9 +1,28 @@
 # which
 
-get command address in system
+查看执行命令的名字。
 
-## usage
+:::warning
+别名: `where`
+:::
+
+## 用法
 
 ```sh
-call which git
+icall which <command>
+icall where <command>
 ```
+
+## 示例
+
+```sh
+icall which git
+icall where git
+```
+
+## 实现
+
+```ts
+
+```
+

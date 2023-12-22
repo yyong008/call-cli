@@ -1,5 +1,6 @@
 import * as fse from 'fs-extra'
 import * as path from 'path'
+
 export function mv(sourcePath: string, destinationPath: string) {
   try {
     fse.move(
