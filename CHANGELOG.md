@@ -1,5 +1,11 @@
 # call-cli
 
+## 0.0.26
+
+### Patch Changes
+
+- class style
+
 ## 0.0.25
 
 ### Patch Changes
