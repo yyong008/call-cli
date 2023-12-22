@@ -1,5 +1,5 @@
 import { type SystemInfo, captureSystemInfo } from './utils'
-import { successMessage } from '../utils/color'
+import { successMessage } from '../../utils/color'
 
 export function neofetch() {
   const info: SystemInfo = captureSystemInfo()
