@@ -1,5 +1,11 @@
 # call-cli
 
+## 0.0.25
+
+### Patch Changes
+
+- ipconfig
+
 ## 0.0.24
 
 ### Patch Changes
