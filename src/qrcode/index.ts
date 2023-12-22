@@ -10,3 +10,7 @@ function gnQrcode(str: string) {
     console.log(url)
   })
 }
+
+export function gnfile(str: string) {
+  qr.toFile('./qrcode.png', str)
+}

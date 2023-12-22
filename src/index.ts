@@ -148,6 +148,15 @@ program
     qrcode(opts[1].args[0]) // pnpm run dev hash asdf 10
   })
 
+program
+  .command('ipconfig')
+  .alias('ifconfig')
+  .action(async () => {
+    const { ipconfig } = await import('./ipconfig')
+
+    ipconfig()
+  })
+
 // program
 //   .command('x')
 //   // .option('-f, --framework <name>', 'to fill simple code', '')
