@@ -164,7 +164,7 @@ export class ICall {
 
   neofetch() {
     this.program.command('neofetch').action(async () => {
-      const { neofetch } = await import('./neofetch')
+      const { neofetch } = await import('./commands/neofetch')
       neofetch()
     })
   }
