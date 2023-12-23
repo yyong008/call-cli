@@ -12,7 +12,7 @@ hero:
       link: /base/intro
     - theme: brand
       text: commands
-      link: /command/index
+      link: /commands/index
 
 features:
   - title: 💫linux/mac/window
