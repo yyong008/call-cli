@@ -87,10 +87,15 @@ export class ICall {
   }
 
   cat() {
-    this.program.command('cat').action(async (...opts) => {
-      const { cat } = await import('./commands/cat')
-      cat(opts[1].args[0])
-    })
+    this.program
+      .command('cat')
+      .alias('type')
+      .alias('gc')
+      .alias('Get-Content')
+      .action(async (...opts) => {
+        const { cat } = await import('./commands/cat')
+        cat(opts[1].args[0])
+      })
   }
   ls() {
     this.program.command('ls').action(async (...opts) => {

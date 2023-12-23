@@ -9,7 +9,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'base', link: '/base/intro' },
-      { text: 'command', link: '/command/index' },
+      { text: 'commands', link: '/command/index' },
     ],
 
     sidebar: [
@@ -42,6 +42,7 @@ export default defineConfig({
           { text: 'which', link: '/which' },
           { text: 'whoami', link: '/whoami' },
           { text: 'qrcode', link: '/qrcode' },
+          { text: 'base64', link: '/base64' },
           { text: 'tree', link: '/tree' },
           { text: 'ipconfig', link: '/ipconfig' },
           { text: 'hash', link: '/hash' },

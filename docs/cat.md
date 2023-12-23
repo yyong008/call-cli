@@ -1,11 +1,22 @@
 # cat
 
+## 描述
+
 输出文件的内容
+
+## 别名
+
+- type
+- gc
+- Get-Content
 
 ## 用法
 
 ```sh
-icall cat <path>
+icall cat <path> # like unix
+icall type <path> # like cmd powershell
+icall gc <path> # like powershell
+icall Get-Content <path> # like powershell
 ```
 
 
