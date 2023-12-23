@@ -1,14 +1,14 @@
 # icall-cli
 
-[iCall CLI](https://call-cli.vercel.app/commands/) is a user-friendly and convenient command-line interface designed for cross-platform compatibility.
+[iCall CLI](https://call-cli.vercel.app/) is a user-friendly and convenient command-line interface designed for cross-platform compatibility.
 
 ## install
 
 ```sh
-pnpm add icall-cli
+npm i -g icall-cli
 ```
 
-now your can use icall command
+now your can use `icall` command
 
 ## create files
 

@@ -1,6 +1,6 @@
 {
   "name": "icall-cli",
-  "version": "0.0.26",
+  "version": "0.0.27",
   "description": "A convenient CLI",
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
