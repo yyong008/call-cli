@@ -14,7 +14,7 @@ call top
 icall top # on window
 ```
 
-![](./assets/top.png)
+![](../assets/top.png)
 
 ## 退出
 
