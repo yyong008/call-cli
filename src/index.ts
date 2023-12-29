@@ -35,6 +35,7 @@ export class ICall {
     this.base64()
     this.qrcode()
     this.ipconfig()
+    this.vite()
   }
 
   version() {
@@ -230,6 +231,12 @@ export class ICall {
 
         ipconfig()
       })
+  }
+  vite() {
+    this.program.command('vite').action(async () => {
+      const { vite } = await import('./commands/vite')
+      vite()
+    })
   }
 }
 

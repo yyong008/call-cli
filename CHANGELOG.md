@@ -1,5 +1,11 @@
 # call-cli
 
+## 0.0.28
+
+### Patch Changes
+
+- vite
+
 ## 0.0.27
 
 ### Patch Changes

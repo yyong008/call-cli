@@ -1,6 +1,6 @@
 {
   "name": "icall-cli",
-  "version": "0.0.27",
+  "version": "0.0.28",
   "description": "A convenient CLI",
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
@@ -71,6 +71,9 @@
   "dependencies": {
     "@clack/core": "^0.3.3",
     "@clack/prompts": "^0.7.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@vitejs/plugin-vue": "^5.0.0",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
     "axios": "^1.6.1",
     "chalk": "^5.3.0",
     "commander": "^11.1.0",
@@ -93,7 +96,8 @@
     "tsx": "^3.14.0",
     "unbuild": "^2.0.0",
     "unzip": "^0.1.11",
-    "unzipper": "^0.10.14"
+    "unzipper": "^0.10.14",
+    "vite": "^5.0.10"
   },
   "files": [
     "./src/bin",
