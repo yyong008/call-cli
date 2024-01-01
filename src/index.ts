@@ -36,6 +36,7 @@ export class ICall {
     this.qrcode()
     this.ipconfig()
     this.vite()
+    this.cd()
   }
 
   version() {
@@ -238,19 +239,18 @@ export class ICall {
       vite()
     })
   }
+
+  cd() {
+    this.program.command('cd').action(async () => {
+      const { cd } = await import('./unstale_commands/cd')
+      cd()
+    })
+  }
 }
 
 export class UnstableICall extends ICall {
   constructor() {
     super()
-  }
-
-  cd() {
-    this.program.command('cd').action(async (...opts) => {
-      const { changeDirectory } = await import('./unstale_commands/cd')
-      console.log(opts[1].args[0])
-      changeDirectory(opts[1].args[0])
-    })
   }
 
   echo() {
