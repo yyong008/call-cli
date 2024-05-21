@@ -1,5 +1,4 @@
 import { Command } from 'commander'
-
 import pkg from '../package.json'
 
 export class ICall {
@@ -35,8 +34,7 @@ export class ICall {
     this.base64()
     this.qrcode()
     this.ipconfig()
-    this.vite()
-    this.cd()
+    this.killNodeCurrentNodeModules()
   }
 
   version() {
@@ -233,17 +231,14 @@ export class ICall {
         ipconfig()
       })
   }
-  vite() {
-    this.program.command('vite').action(async () => {
-      const { vite } = await import('./commands/vite')
-      vite()
-    })
-  }
 
-  cd() {
-    this.program.command('cd').action(async () => {
-      const { cd } = await import('./unstale_commands/cd')
-      cd()
+  killNodeCurrentNodeModules() {
+    this.program.command('nmk').action(async () => {
+      const { killCurrentDirNodeModules } = await import(
+        './unstale_commands/nmk'
+      )
+
+      await killCurrentDirNodeModules()
     })
   }
 }
